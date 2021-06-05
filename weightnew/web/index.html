@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>智能中药房</title>
+    <link href="css/jquery.slideBox.css" rel="stylesheet" type="text/css"/>
+    <link href="css/zzsc.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<div id="demo2" class="slideBox">
+    <ul class="items">
+        <li>
+            <a href="html/productList.html" title="艾叶">
+                <img src="images/aiye.jpg">
+            </a>
+        </li>
+        <li>
+            <a href="html/productList.html" title="白矾">
+                <img src="images/baifan.jpg">
+            </a>
+        </li>
+        <li>
+            <a href="html/productList.html" title="陈皮">
+                <img src="images/chenpi.jpg">
+            </a>
+        </li>
+        <li>
+            <a href="html/productList.html" title="枸杞子">
+                <img src="images/gouqizi.jpg">
+            </a>
+        </li>
+        <li>
+            <a href="html/productList.html" title="红花">
+                <img src="images/honghua.jpg">
+            </a>
+        </li>
+        <li>
+            <a href="html/productList.html" title="决明子">
+                <img src="images/juemingzi.jpg">
+            </a>
+        </li>
+        <li>
+            <a href="html/productList.html" title="桑葚">
+                <img src="images/sangshen.jpg">
+            </a>
+        </li>
+        <li>
+            <a href="html/productList.html" title="山楂">
+                <img src="images/shanzha.jpg">
+            </a>
+        </li>
+        <li>
+            <a href="html/productList.html" title="夏枯草">
+                <img src="images/xiakucao.jpg">
+            </a>
+        </li>
+        <li>
+            <a href="html/productList.html" title="细辛">
+                <img src="images/xixin.jpg">
+            </a>
+        </li>
+    </ul>
+</div>
+
+<script src="js/jquery.min.js" type="text/javascript"></script>
+<script src="js/jquery.slideBox.min.js" type="text/javascript"></script>
+<script>
+    jQuery(function ($) {
+        $('#demo1').slideBox();
+        $('#demo2').slideBox({
+            direction: 'top',//left,top#方向
+            duration: 0.3,//滚动持续时间，单位：秒
+            easing: 'linear',//swing,linear//滚动特效
+            delay: 3,//滚动延迟时间，单位：秒
+            startIndex: 1//初始焦点顺序
+        });
+        $('#demo3').slideBox({
+            duration: 0.3,//滚动持续时间，单位：秒
+            easing: 'linear',//swing,linear//滚动特效
+            delay: 5,//滚动延迟时间，单位：秒
+            hideClickBar: false,//不自动隐藏点选按键
+            clickBarRadius: 10
+        });
+        $('#demo4').slideBox({
+            hideBottomBar: true//隐藏底栏
+        });
+    });
+</script>
+</body>
+</html>

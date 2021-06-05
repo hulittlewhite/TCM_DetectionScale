@@ -1,0 +1,10 @@
+#在 Flask 后端项目下启动后端代码：
+#   python app.py
+
+#在 VUE 前端项目下，先安装依赖：
+#   npm install
+
+#然后运行前端：
+#   npm run serve
+
+#然后在浏览器打开localhost即可
